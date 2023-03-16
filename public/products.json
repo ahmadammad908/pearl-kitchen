@@ -1,0 +1,482 @@
+{
+    "status": true,
+    "message": "category record fetched",
+    "Outlets": [
+        {
+            "id": "44",
+            "name": "Rider App Testing",
+            "address": "KFC Rahim Yar Khan",
+            "app_logo": "custom-image-bf30127044-logo-.png",
+            "image": "https://digishop.binofapp.com/uploads/app_logo/actual_images/custom-image-bf30127044-logo-.png"
+        },
+        {
+            "id": "39",
+            "name": "MyDigiShop",
+            "address": "Rue Supexhe 125 Sint-amandsberg",
+            "app_logo": "custom-image-b0bbf6fc39-my-digi-shop-.png",
+            "image": "https://digishop.binofapp.com/uploads/app_logo/actual_images/custom-image-b0bbf6fc39-my-digi-shop-.png"
+        }
+    ],
+    "category_data": [
+        {
+            "cat_id": "802",
+            "cat_name": "new cat",
+            "sale_tax": [],
+            "sale_discount": [],
+            "data": [
+                {
+                    "product_id": "167",
+                    "description": "",
+                    "name": "new prod",
+                    "image": "https://digishop.binofapp.com/static/front/theme1/images/pattren.png",
+                    "add_on_id": null,
+                    "minimum_price": "100.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                }
+            ]
+        },
+        {
+            "cat_id": "544",
+            "cat_name": "Rice",
+            "sale_tax": [],
+            "sale_discount": [],
+            "data": [
+                {
+                    "product_id": "27",
+                    "description": "Basmati rice, biryani masala, star anise, alu bukhara, garam masala",
+                    "name": "Chicken Biryani",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_27_istockphoto-1254720533-612x612_(1).png",
+                    "add_on_id": null,
+                    "minimum_price": "95.00",
+                    "link": "https://digishop.binofapp.com//f/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                },
+                {
+                    "product_id": "25",
+                    "description": "",
+                    "name": "Daal / Channa with 2 Nan or Rice",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_25_istockphoto-179289809-612x612_(1).png",
+                    "add_on_id": null,
+                    "minimum_price": "4.49",
+                    "link": "javascript:void(0);",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                },
+                {
+                    "product_id": "26",
+                    "description": "Lamb neck, paneer, basmati rice, spinach, madras spice paste",
+                    "name": "Lamb Biryani",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_26_istockphoto-1086974196-612x612_(1).png",
+                    "add_on_id": null,
+                    "minimum_price": "5.00",
+                    "link": "javascript:void(0);",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                },
+                {
+                    "product_id": "24",
+                    "description": "Lamb shanks, basmati rice, meyer lemons, yogurt, curry powder",
+                    "name": "Lamb Curry with 2 Nan or Rice",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_24_istockphoto-1087069910-612x612_(1).png",
+                    "add_on_id": null,
+                    "minimum_price": "6.49",
+                    "link": "javascript:void(0);",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                },
+                {
+                    "product_id": "162",
+                    "description": "",
+                    "name": "test-rice",
+                    "image": "https://digishop.binofapp.com/static/front/theme1/images/pattren.png",
+                    "add_on_id": null,
+                    "minimum_price": "10.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [
+                        {
+                            "name": "Tax 5%",
+                            "id": "25",
+                            "amount": 5,
+                            "is_percentage": true,
+                            "is_applicable": true,
+                            "type": "Product"
+                        },
+                        {
+                            "name": "Tax 5 Amount",
+                            "id": "21",
+                            "amount": 5,
+                            "is_percentage": false,
+                            "is_applicable": true,
+                            "type": "Product"
+                        }
+                    ],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                },
+                {
+                    "product_id": "137",
+                    "description": "Chicken Biryani Double Masala\r\nChicken Biryani Double Masala\r\nChicken Biryani Double Masala\r\nChicken Biryani Double Masala\r\nChicken Biryani Double Masala",
+                    "name": "Chicken Biryani Double Masala",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_137_maxresdefault.jpg",
+                    "add_on_id": null,
+                    "minimum_price": "100.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                },
+                {
+                    "product_id": "104",
+                    "description": "Chicken, greek yogurt, green bell pepper, red bell pepper, garam masala",
+                    "name": "CHICKEN TIKKA",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_104_Chicken_Tikka_Kebab.png",
+                    "add_on_id": null,
+                    "minimum_price": "300.00",
+                    "link": "javascript:void(0);",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                }
+            ]
+        },
+        {
+            "cat_id": "785",
+            "cat_name": "Burgers",
+            "sale_tax": [],
+            "sale_discount": [],
+            "data": [
+                {
+                    "product_id": "76",
+                    "description": "Meal with reg fries & soft drink Crumbled blue cheese, ground lamb, worcestershire sauce, red onion, butter",
+                    "name": "1/4 lb Lamb Burger",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_76_lamb_burger.png",
+                    "add_on_id": null,
+                    "minimum_price": "3.49",
+                    "link": "https://digishop.binofapp.com//f/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                },
+                {
+                    "product_id": "123",
+                    "description": "with tomato, onions, traditional mint chutney and crispy fries.",
+                    "name": "Burger Bun",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_123_buttery-brioche-buns-thumb.png",
+                    "add_on_id": null,
+                    "minimum_price": "90.00",
+                    "link": "https://digishop.binofapp.com//f/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                },
+                {
+                    "product_id": "158",
+                    "description": "",
+                    "name": "test-burger",
+                    "image": "https://digishop.binofapp.com/static/front/theme1/images/pattren.png",
+                    "add_on_id": null,
+                    "minimum_price": "30.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [
+                        {
+                            "name": "Tax-CAT-5-%",
+                            "id": "18",
+                            "amount": 5,
+                            "is_percentage": true,
+                            "is_applicable": true,
+                            "type": "Product"
+                        }
+                    ],
+                    "sale_discount": [
+                        {
+                            "name": "30",
+                            "id": "47",
+                            "amount": 30,
+                            "is_percentage": false,
+                            "is_applicable": true,
+                            "type": "Product"
+                        }
+                    ],
+                    "add_on_exist": true
+                },
+                {
+                    "product_id": "138",
+                    "description": "qa-description",
+                    "name": "Crunch Bread",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_138_download_(9).jpg",
+                    "add_on_id": null,
+                    "minimum_price": "200.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                }
+            ]
+        },
+        {
+            "cat_id": "781",
+            "cat_name": "Fries",
+            "sale_tax": [
+                {
+                    "name": "Tax 5%",
+                    "id": "25",
+                    "amount": 5,
+                    "is_percentage": true,
+                    "is_applicable": true,
+                    "type": "category"
+                },
+                {
+                    "name": "Tax 5 Amount",
+                    "id": "21",
+                    "amount": 5,
+                    "is_percentage": false,
+                    "is_applicable": true,
+                    "type": "category"
+                }
+            ],
+            "sale_discount": [],
+            "data": [
+                {
+                    "product_id": "135",
+                    "description": "",
+                    "name": "Fries plus Ketchup",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_135_Copycat-McDonalds-French-Fries-.jpg",
+                    "add_on_id": null,
+                    "minimum_price": "50.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                },
+                {
+                    "product_id": "160",
+                    "description": "",
+                    "name": "test-fries",
+                    "image": "https://digishop.binofapp.com/static/front/theme1/images/pattren.png",
+                    "add_on_id": null,
+                    "minimum_price": "50.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [
+                        {
+                            "name": "Tax 5%",
+                            "id": "25",
+                            "amount": 5,
+                            "is_percentage": true,
+                            "is_applicable": true,
+                            "type": "Product"
+                        }
+                    ],
+                    "sale_discount": [
+                        {
+                            "name": "50",
+                            "id": "44",
+                            "amount": 50,
+                            "is_percentage": false,
+                            "is_applicable": true,
+                            "type": "Product"
+                        }
+                    ],
+                    "add_on_exist": true
+                },
+                {
+                    "product_id": "134",
+                    "description": "",
+                    "name": "Crunch Fries",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_134_French-Fries-4x3-1-2000-0a55bb658a0d41aca29f0ec4c8eba47c.jpg",
+                    "add_on_id": null,
+                    "minimum_price": "12.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                },
+                {
+                    "product_id": "136",
+                    "description": "",
+                    "name": "Double Msala Fries",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_136_French_Fries.jpeg",
+                    "add_on_id": null,
+                    "minimum_price": "12.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                }
+            ]
+        },
+        {
+            "cat_id": "790",
+            "cat_name": "Pizza",
+            "sale_tax": [
+                {
+                    "name": "Tax 5 Amount",
+                    "id": "21",
+                    "amount": 5,
+                    "is_percentage": false,
+                    "is_applicable": true,
+                    "type": "category"
+                },
+                {
+                    "name": "Tax-Product-5-%",
+                    "id": "17",
+                    "amount": 5,
+                    "is_percentage": true,
+                    "is_applicable": true,
+                    "type": "category"
+                }
+            ],
+            "sale_discount": [],
+            "data": [
+                {
+                    "product_id": "157",
+                    "description": "",
+                    "name": "test pizza",
+                    "image": "https://digishop.binofapp.com/static/front/theme1/images/pattren.png",
+                    "add_on_id": null,
+                    "minimum_price": "20.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [
+                        {
+                            "name": "Tax 5 Amount",
+                            "id": "21",
+                            "amount": 5,
+                            "is_percentage": false,
+                            "is_applicable": true,
+                            "type": "Product"
+                        },
+                        {
+                            "name": "Tax-Product-5-%",
+                            "id": "17",
+                            "amount": 5,
+                            "is_percentage": true,
+                            "is_applicable": true,
+                            "type": "Product"
+                        }
+                    ],
+                    "sale_discount": [],
+                    "add_on_exist": false
+                },
+                {
+                    "product_id": "140",
+                    "description": "Pizza Sub Category Test",
+                    "name": "Italian Pizza",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_140_top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg",
+                    "add_on_id": null,
+                    "minimum_price": "100.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                }
+            ]
+        },
+        {
+            "cat_id": "795",
+            "cat_name": "Chinese Noodles",
+            "sale_tax": [],
+            "sale_discount": [],
+            "data": [
+                {
+                    "product_id": "164",
+                    "description": "",
+                    "name": "test-noodles",
+                    "image": "https://digishop.binofapp.com/static/front/theme1/images/pattren.png",
+                    "add_on_id": null,
+                    "minimum_price": "10.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                },
+                {
+                    "product_id": "155",
+                    "description": "1 Plate Noodle 1 Plate Noodle 1 Plate Noodle1 Plate Noodle1 Plate Noodle1 Plate Noodle",
+                    "name": "1 Plate Noodle",
+                    "image": "https://digishop.binofapp.com/uploads/items/actual_images/39/post_155_lo-mein-square-500x500.jpg",
+                    "add_on_id": null,
+                    "minimum_price": "20.00",
+                    "link": "https://digishop.binofapp.com//food_detail/",
+                    "favourite_status": false,
+                    "sale_tax": [],
+                    "sale_discount": [],
+                    "add_on_exist": true
+                }
+            ]
+        }
+    ],
+    "versionData": {
+        "androidVersionCode": "3",
+        "androidVersionName": "1",
+        "iosVersionCode": "1",
+        "iosVersionName": "1",
+        "type": "normal",
+        "iosUrl": "https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Jun0122&utm_cam",
+        "androidUrl": "https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Jun0122&utm_cam"
+    },
+    "product_image_path": "https://digishop.binofapp.com/uploads/items/actual_images/39/",
+    "category_image_path": "https://digishop.binofapp.com/uploads/catagories/medium_images/",
+    "deals_status": true,
+    "deals_data": [
+        {
+            "deal_id": "17",
+            "title": "New deal",
+            "description": "\r\n2 Fries Plus Ketchup\r\n1 Crunch Fries\r\n",
+            "image": "https://digishop.binofapp.com/uploads/deals/actual_images/post_17_54659021.gif",
+            "minimum_price": "25"
+        },
+        {
+            "deal_id": "18",
+            "title": "New deal 2",
+            "description": "\r\n3 Large Chicken Biryani Double Masala\r\n",
+            "image": "https://digishop.binofapp.com/uploads/deals/actual_images/post_18_chicken-biryani-recipe-500x500.jpg",
+            "minimum_price": "200"
+        }
+    ],
+    "point_slogan": null,
+    "outlet_detail": {
+        "id": "39",
+        "name": "MyDigiShop",
+        "phone": "0499456967",
+        "address": "Rue Supexhe 125 Sint-amandsberg",
+        "image": "https://digishop.binofapp.com/uploads/outlet_type/actual_images/custom-image-821df3b939-120959659-traditional-moroccan-tajine-of-chicken-with-salted-lemons-olives-top-view--.jpg",
+        "logo": "https://digishop.binofapp.com/uploads/app_logo/actual_images/custom-image-b0bbf6fc39-my-digi-shop-.png",
+        "rating": 2.8,
+        "sale_discount": [],
+        "sale_tax": [],
+        "requiredPhone": true,
+        "refund_access": true
+    },
+    "currency_unit": "€",
+    "toptext": {
+        "toptext": "30% OFF"
+    },
+    "reward_status": "0",
+    "onesignal_app_id": "b9f40003-ac80-41af-86c3-4040056b356d"
+}
