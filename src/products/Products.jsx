@@ -3,18 +3,18 @@ import ProductCard from "./ProductCard";
 import useProducts from "./useProducts";
 import SearchFilter from "./components/SearchFilter";
 import CategoryFilter from "./components/CategoryFilter";
+import { useSelector } from "react-redux";
+
 export default function Products() {
   const { getProducts } = useProducts();
+  const { products, state } = useSelector((state) => state.products);
 
-  const [products, setProducts] = useState([]);
   const [category, setCategory] = useState("");
 
   const [internalSearch, setInternalSearch] = useState("");
 
   useEffect(() => {
     getProducts({
-      onFailure: (error) => alert(JSON.stringify(error)),
-      onSuccess: (osairam) => setProducts(osairam),
       category,
     });
   }, [category]);

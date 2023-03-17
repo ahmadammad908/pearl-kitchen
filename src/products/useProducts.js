@@ -1,8 +1,12 @@
 // Import the functions you need from the SDKs you need
 import { collection, getDocs, query, where } from "firebase/firestore";
+import { useDispatch } from "react-redux";
 import { db } from "../authentication/firebase/Firebase";
-
+import { setProducts } from "./productsSlice";
+import { setCategories } from "./categoriesSlice";
 export default function useProducts() {
+  const dispatch = useDispatch();
+
   async function getProducts({ onSuccess, onFailure, category }) {
     try {
       /**
@@ -28,9 +32,20 @@ export default function useProducts() {
         // doc.data() is never undefined for query doc snapshots
         console.log(doc.id, " => ", doc.data());
       });
-      onSuccess(products);
+
+      dispatch(
+        setProducts({
+          products,
+          state: "loaded",
+        })
+      );
     } catch (error) {
-      onFailure(error);
+      dispatch(
+        setProducts({
+          products: [],
+          state: "failed",
+        })
+      );
     }
   }
 
@@ -46,9 +61,19 @@ export default function useProducts() {
         // doc.data() is never undefined for query doc snapshots
         console.log(doc.id, " => ", doc.data());
       });
-      onSuccess(categories);
+      dispatch(
+        setCategories({
+          categories,
+          state: "loaded",
+        })
+      );
     } catch (error) {
-      onFailure(error);
+      dispatch(
+        setCategories({
+          categories: [],
+          state: "failed",
+        })
+      );
     }
   }
 

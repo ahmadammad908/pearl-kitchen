@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import useProducts from "../useProducts";
+import { useSelector } from "react-redux";
 
 export default function CategoryFilter({ category, onChangeCategory }) {
   const { getCategories } = useProducts();
-
-  const [categories, setCategories] = useState([]);
+  const { categories, state } = useSelector((state) => state.categories);
 
   useEffect(() => {
-    getCategories({
-      onFailure: (error) => alert(JSON.stringify(error)),
-      onSuccess: (ahmad) => setCategories(ahmad),
-    });
+    getCategories({});
   }, []);
+
+  console.log("hello", { state });
 
   return (
     <div>
