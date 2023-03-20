@@ -28,7 +28,10 @@ export default function useProducts() {
       const products = [];
 
       querySnapshot.forEach((doc) => {
-        products.push(doc.data());
+        products.push({
+          ...doc.data(),
+          id: doc.id,
+        });
         // doc.data() is never undefined for query doc snapshots
         console.log(doc.id, " => ", doc.data());
       });

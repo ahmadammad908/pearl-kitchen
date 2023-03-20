@@ -14,11 +14,11 @@ function App() {
     <div>
       <HeaderNavbar />
       <Outlet />
-      <Products />
+      {/* <Products />
       <CartCard />
       <Loader />
       <ErrorPage />
-      <SignUp />
+      <SignUp /> */}
     </div>
   );
 }

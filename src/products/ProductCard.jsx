@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../cart/cartSlice";
 
 const ProductCard = (product) => {
+  const dispatch = useDispatch();
   return (
     <div>
       <div class="card">
@@ -18,11 +21,9 @@ const ProductCard = (product) => {
             <p style={{ marginTop: "60px" }}>{product.name}</p>
           </div>
           <h4 style={{ marginTop: "10px" }}>Rs {product.price}</h4>
-
-          <a href="#" class="action">
+          <button onClick={() => dispatch(addToCart(product))}>
             Add to Cart
-            <span aria-hidden="true">→</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
