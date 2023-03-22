@@ -6,7 +6,7 @@ const ProductCard = (product) => {
   console.log("Products", product);
   const dispatch = useDispatch();
   return (
-    <div>
+    <div style={{ padding: "30px" }}>
       <div class="card">
         <div class="image">
           <img
@@ -22,7 +22,7 @@ const ProductCard = (product) => {
             <p style={{ marginTop: "60px" }}>{product.name}</p>
           </div>
           <h4 style={{ marginTop: "10px" }}>Rs {product.price}</h4>
-          <button onClick={() => dispatch(addToCart(product))}>
+          <button onClick={() => dispatch(addToCart(product))} className="btn">
             Add to Cart
           </button>
         </div>

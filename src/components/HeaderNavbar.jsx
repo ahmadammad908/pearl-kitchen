@@ -21,13 +21,32 @@ const HeaderNavbar = () => {
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
-            <span class="ml-3 text-xl">Pearl Kitchen</span>
+            <span class="ml-3 text-xl">
+              <Link to={"/"}>Pearl Kitchen</Link>
+            </span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center"></nav>
           <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            <Link to={"/cart"}>
-              <BiShoppingBag />
-              {!!cart.length && cart.length}
+            <Link
+              to={"/cart"}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <p style={{ fontSize: "26px", color: "#bd1cbd" }}>
+                <BiShoppingBag />
+              </p>
+              {/* <BiShoppingBag /> */}
+              <p
+                style={{
+                  marginTop: "-10px",
+                  color: "#bd1cbd",
+                }}
+              >
+                {!!cart.length && cart.length}
+              </p>
             </Link>
             {/* <svg
               fill="none"

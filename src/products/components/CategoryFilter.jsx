@@ -13,8 +13,15 @@ export default function CategoryFilter({ category, onChangeCategory }) {
   console.log("hello", { state });
 
   return (
-    <div>
+    <div style={{ margin: "10px" }}>
       <select
+        style={{
+          padding: "10px 20px",
+          background: "#bd1cbd",
+          color: "white",
+          borderRadius: "10px",
+          outline: "none",
+        }}
         id="search"
         name="categories"
         value={category}

@@ -33,12 +33,10 @@ export default function Products() {
   return (
     <div>
       <div
-        className="box"
         style={{
           display: "flex",
-          flexWrap: "wrap",
           justifyContent: "center",
-          margin: "0px",
+          flexWrap: "wrap",
         }}
       >
         <CategoryFilter
@@ -50,6 +48,16 @@ export default function Products() {
           // setInternalSearch={setInternalSearch}
           onChangeSearch={(internalSearch) => setInternalSearch(internalSearch)}
         />
+      </div>
+      <div
+        className="box"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          margin: "0px",
+        }}
+      >
         {filteredProducts.length === 0 && "no result founds"}
         {filteredProducts.map((product, i) => (
           <ProductCard key={i} {...product} />

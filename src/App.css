@@ -432,4 +432,31 @@ box-shadow:  20px 20px 60px #bebebe,
       
       }
       
+      .btn {
+        padding: 5px 10px;
+        margin: 10px 0px;
+        border: 2px solid #bd1cbd;
+        color: white;
+        background: #bd1cbd;
+        border-radius: 10px;
+      }
      
+
+      .btn:hover {
+        color: #ffffff;
+        transform: scale(1.1);
+        outline: 2px solid #bd1cbd;
+        box-shadow: 4px 5px 17px -4px #bd1cbd;
+      }
+      
+      
+      .btn:hover::before {
+        width: 250%;
+      }
+      .color::placeholder {
+        color: white;
+      }
+      .color:hover {
+        background: white;
+        color:#bd1cbd ;
+      }
