@@ -3,13 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDRHIrsWfTip6fj6EsLihRfFeNQaddt6ak",
-  authDomain: "sassy-nutronic.firebaseapp.com",
-  projectId: "sassy-nutronic",
-  storageBucket: "sassy-nutronic.appspot.com",
-  messagingSenderId: "557307653515",
-  appId: "1:557307653515:web:a38832315dfc17f1eb138e",
-  measurementId: "G-ZHDZL44XS0",
+  apiKey: "AIzaSyBg2FPjHQ6p6G9ZWeGrm2nOYSZnssl36l0",
+  authDomain: "pearl-burgers.firebaseapp.com",
+  projectId: "pearl-burgers",
+  storageBucket: "pearl-burgers.appspot.com",
+  messagingSenderId: "838712971901",
+  appId: "1:838712971901:web:0e9de683ad7e8e10779714",
 };
 
 // Initialize Firebase
