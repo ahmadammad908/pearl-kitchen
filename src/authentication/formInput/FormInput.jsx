@@ -13,6 +13,12 @@ const FormInput = (props) => {
         onChange={onChange}
         onBlur={handleFocus}
         focused={focused.toString()}
+        style={{
+          padding: "10px 0px",
+          borderRadius: "10PX",
+          paddingLeft: "10px",
+          outline: "none",
+        }}
       />
       <span className="errorMessage">{errorMessage}</span>
     </div>

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebase/Firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-const Login = () => {
+const SignIn = () => {
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
   });
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
@@ -22,7 +22,7 @@ const Login = () => {
         (userCredential) => {
           // Signed in
           const user = userCredential.user;
-          //   navigate("/received");
+          navigate("/confirmOrder");
           // ...
         }
       );
@@ -35,7 +35,7 @@ const Login = () => {
       >
         <div class="form-box">
           <form class="form">
-            <span class="title">Login</span>
+            <span class="title">Sign In</span>
             <span class="subtitle">Create a free account with your email.</span>
             <div>
               <input
@@ -68,7 +68,7 @@ const Login = () => {
           <div class="form-section">
             <p>
               Dont have an account?
-              <Link to={"/checkout"}> {""}Sign Up</Link>
+              <Link to={"/signUp"}> {""}Sign Up</Link>
             </p>
           </div>
         </div>
@@ -77,4 +77,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;

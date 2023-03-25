@@ -353,7 +353,7 @@ box-shadow:  20px 20px 60px #bebebe,
       .form-container {
         overflow: hidden;
         border-radius: 8px;
-        background-color: #fff;
+        /* background-color: #fff; */
         margin: 1rem 0 .5rem;
         width: 100%;
       }

@@ -11,6 +11,10 @@ const Cart = () => {
     totalPrice += osairam.quantity * osairam.price;
   });
 
+  const handleCartClearance = () => {
+    setCartItems([]);
+  };
+
   return (
     <div>
       {cart.length === 0 && (
@@ -32,67 +36,71 @@ const Cart = () => {
       {cart.map((osairam, i) => (
         <CartCard key={i} {...osairam} />
       ))}
-      <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            paddingTop: "20px",
-          }}
-        >
-          <h2
-            className="Total Price"
+      {cart.length != 0 && (
+        <div>
+          <div
             style={{
-              fontSize: "30px",
-              padding: "10px 20px",
-              background: "#EA5455",
-              color: "white",
-              borderRadius: "10px",
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "20px",
             }}
           >
-            Total Price
-          </h2>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            paddingTop: "20px",
-            padding: "20px",
-          }}
-        >
-          <h3
+            <h2
+              className="Total Price"
+              style={{
+                fontSize: "30px",
+                padding: "10px 20px",
+                background: "#EA5455",
+                color: "white",
+                borderRadius: "10px",
+              }}
+            >
+              Total Price
+            </h2>
+          </div>
+
+          <div
             style={{
-              fontSize: "30px",
-              padding: "10px 20px",
-              background: "#EA5455",
-              color: "white",
-              borderRadius: "10px",
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "20px",
+              padding: "20px",
             }}
           >
-            Rs {totalPrice}
-          </h3>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            paddingTop: "20px",
-          }}
-        >
-          <Link
-            to={"/checkout"}
+            <h3
+              style={{
+                fontSize: "30px",
+                padding: "10px 20px",
+                background: "#EA5455",
+                color: "white",
+                borderRadius: "10px",
+              }}
+            >
+              Rs {totalPrice}
+            </h3>
+          </div>
+          <div
             style={{
-              padding: "10px 20px",
-              background: "#EA5455",
-              borderRadius: "10px",
-              color: "white",
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "20px",
+              padding: "20px",
             }}
           >
-            Proceed To checkout
-          </Link>
+            <Link
+              to={"/checkout"}
+              style={{
+                padding: "10px 20px",
+                background: "#EA5455",
+                borderRadius: "10px",
+                color: "white",
+              }}
+            >
+              Proceed To checkout
+            </Link>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

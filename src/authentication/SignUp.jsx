@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormInput from "./formInput/FormInput";
 // import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebase/Firebase";
 import { updateProfile, createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -10,7 +11,7 @@ const SignUp = () => {
     password: "",
     confirmPassword: "",
   });
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const inputs = [
     {
@@ -63,14 +64,19 @@ const SignUp = () => {
         updateProfile(user.currentUser, {
           displayName: inputValues.email,
         });
-        // navigate("/login");
+        navigate("/signIn");
         // ...
       });
     } catch (error) {}
   };
   return (
     <div
-      style={{ display: "flex", justifyContent: "center", marginTop: "90px" }}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        marginTop: "90px",
+        padding: " 20px",
+      }}
     >
       <div class="form-box">
         <form class="form">
@@ -99,7 +105,7 @@ const SignUp = () => {
         <div class="form-section">
           <p>
             Have an account?
-            {/* <Link to={"/login"}> {""}Login</Link> */}
+            <Link to={"/signIn"}> {""}Sign In</Link>
           </p>
         </div>
       </div>

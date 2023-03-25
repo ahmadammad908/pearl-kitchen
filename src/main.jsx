@@ -10,6 +10,9 @@ import CartCard from "./cart/CartCard";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Cart from "./cart/Cart";
 import CheckOut from "./cart/CheckOut";
+import SignIn from "./authentication/SignIn";
+import SignUp from "./authentication/SignUp";
+import ConfirmOrder from "./cart/ConfirmOrder";
 // import Login from "./authentication/Login";
 
 const router = createBrowserRouter([
@@ -28,6 +31,18 @@ const router = createBrowserRouter([
       {
         path: "/checkout",
         element: <CheckOut />,
+      },
+      {
+        path: "/signIn",
+        element: <SignIn />,
+      },
+      {
+        path: "/signUp",
+        element: <SignUp />,
+      },
+      {
+        path: "/confirmOrder",
+        element: <ConfirmOrder />,
       },
     ],
   },

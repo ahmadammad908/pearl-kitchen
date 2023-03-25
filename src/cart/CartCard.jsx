@@ -25,7 +25,7 @@ const CartCard = (osairam) => {
         height={"140px"}
         style={{ borderRadius: "20px" }}
       ></img>
-      <h1 style={{ marginTop: "-15px", marginLeft: "20px" }}>{osairam.name}</h1>
+      <h1 style={{ marginLeft: "20px", marginTop: "20px" }}>{osairam.name}</h1>
       {/* <p style={{ marginTop: "-14px", marginLeft: "30px" }}>{osairam.price}</p> */}
 
       <div
