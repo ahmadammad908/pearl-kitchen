@@ -81,7 +81,7 @@ const SignUp = () => {
       <div class="form-box">
         <form class="form">
           <span class="title">Sign up</span>
-          <span class="subtitle">Create a free account with your email.</span>
+          <span class="subtitle">Sign Up with your email.</span>
           <div>
             {inputs.map((input) => (
               <div class="form-container">

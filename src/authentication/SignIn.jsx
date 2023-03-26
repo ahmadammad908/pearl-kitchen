@@ -36,7 +36,7 @@ const SignIn = () => {
         <div class="form-box">
           <form class="form">
             <span class="title">Sign In</span>
-            <span class="subtitle">Create a free account with your email.</span>
+            <span class="subtitle">Sign In with your email.</span>
             <div>
               <input
                 type={"email"}

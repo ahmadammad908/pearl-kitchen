@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+  background: rgb(232, 174, 184);
+}
     .card:hover {
         transition: 1s ease-in-out;
         transform: scale(1.09);
@@ -224,9 +226,9 @@
         border: 5px solid palevioletred;
         border-radius: 20px;
 background: #e0e0e0;
-box-shadow:  20px 20px 60px #bebebe,
+box-shadow:  0px 0px 0px #bebebe,
 
-             -20px -20px 60px #ffffff;
+             -0px -0px 0px #ffffff;
       }
       
       .content {
@@ -333,8 +335,8 @@ box-shadow:  20px 20px 60px #bebebe,
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 32px 24px 24px;
-        gap: 16px;
+        padding:10px 25px 4px;
+        gap: 10px;
         text-align: center;
       }
       
@@ -393,7 +395,8 @@ box-shadow:  20px 20px 60px #bebebe,
         color: #fff;
         border: 0;
         border-radius: 24px;
-        padding: 10px 16px;
+        margin:10px;
+        padding: 12px 18px;
         font-size: 1rem;
         font-weight: 600;
         cursor: pointer;
