@@ -4,6 +4,8 @@ import useProducts from "./useProducts";
 import SearchFilter from "./components/SearchFilter";
 import CategoryFilter from "./components/CategoryFilter";
 import { useSelector } from "react-redux";
+import Loader from "../components/Loader";
+import { CollectionReference } from "firebase/firestore";
 
 export default function Products() {
   const { getProducts } = useProducts();
@@ -58,7 +60,16 @@ export default function Products() {
           margin: "0px",
         }}
       >
-        {filteredProducts.length === 0 && "no result founds"}
+        {filteredProducts.length === 0 && (
+          <div style={{ paddingTop: "80px" }}>
+            <div style={{ fontSize: "20px", color: "red" }}>
+              <h1>No Results Found </h1>
+            </div>
+            <div style={{ paddingTop: "20px" }}>
+              <Loader />
+            </div>
+          </div>
+        )}
         {filteredProducts.map((product, i) => (
           <ProductCard key={i} {...product} />
         ))}

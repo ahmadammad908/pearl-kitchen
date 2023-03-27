@@ -52,7 +52,6 @@ const Loader = () => {
             stroke-linecap="round"
           ></circle>
         </svg>
-        <h1 style={{ fontSize: "30px" }}>Loading...</h1>
       </div>
     </div>
   );
