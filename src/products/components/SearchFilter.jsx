@@ -1,5 +1,4 @@
 import React from "react";
-
 const SearchFilter = ({ internalSearch, onChangeSearch }) => {
   return (
     <div
@@ -12,7 +11,7 @@ const SearchFilter = ({ internalSearch, onChangeSearch }) => {
           padding: "10px 30px",
           paddingLeft: "7px",
           borderRadius: "10px",
-          background: "#bd1cbd",
+          background: "#BD1CBD",
           outline: "none",
           marginTop: "10px",
           color: "white",
@@ -29,5 +28,4 @@ const SearchFilter = ({ internalSearch, onChangeSearch }) => {
     </div>
   );
 };
-
 export default SearchFilter;

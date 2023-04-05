@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 const CheckOut = () => {
   const { cart, state } = useSelector((state) => state.cart);
-
   let totalPrice = 0;
   cart.forEach((osairam) => {
     totalPrice += osairam.quantity * osairam.price;
   });
-
   console.log("checkoooooooooooo", cart);
   return (
     <div>
@@ -46,7 +44,6 @@ const CheckOut = () => {
               Price
             </th>
           </tr>
-
           {cart.map((osairam) => (
             <tr style={{}}>
               <td
@@ -89,7 +86,6 @@ const CheckOut = () => {
           </div>
         </table>
       </div>
-
       <div
         style={{ display: "flex", justifyContent: "center", padding: "20px" }}
       >
@@ -111,5 +107,4 @@ const CheckOut = () => {
     </div>
   );
 };
-
 export default CheckOut;

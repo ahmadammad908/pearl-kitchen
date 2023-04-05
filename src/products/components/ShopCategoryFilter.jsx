@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import useProducts from "../useProducts";
-import { useSelector } from "react-redux";
-export default function CategoryFilter({ category, onChangeCategory }) {
-  const { getCategories } = useProducts();
-  const { categories, state } = useSelector((state) => state.categories);
-  useEffect(() => {
-    getCategories({});
-  }, []);
+
+export default function ShopCategoryFilter({
+  options,
+  category,
+  onChangeCategory,
+}) {
   return (
     <div style={{ margin: "10px" }}>
       <select
@@ -23,8 +21,8 @@ export default function CategoryFilter({ category, onChangeCategory }) {
         onChange={(e) => onChangeCategory(e.target.value)}
       >
         <option value="">All</option>
-        {categories.map((category) => (
-          <option value={category.name}>{category.name}</option>
+        {options.map((option) => (
+          <option value={option}>{option}</option>
         ))}
       </select>
     </div>

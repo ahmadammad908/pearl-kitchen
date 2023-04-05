@@ -22,7 +22,7 @@ const HeaderNavbar = () => {
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
             <span class="ml-3 text-xl">
-              <Link to={"/"}>Pearl Kitchen</Link>
+              <Link to={"/"}>Royal Kitchen</Link>
             </span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center"></nav>
@@ -35,14 +35,14 @@ const HeaderNavbar = () => {
                 alignItems: "center",
               }}
             >
-              <p style={{ fontSize: "26px", color: "#bd1cbd" }}>
+              <p style={{ fontSize: "26px", color: "#BD1CBD" }}>
                 <BiShoppingBag />
               </p>
               {/* <BiShoppingBag /> */}
               <p
                 style={{
                   marginTop: "-10px",
-                  color: "#bd1cbd",
+                  color: "#BD1CBD",
                 }}
               >
                 {!!cart.length && cart.length}
@@ -65,5 +65,4 @@ const HeaderNavbar = () => {
     </div>
   );
 };
-
 export default HeaderNavbar;

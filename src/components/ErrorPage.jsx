@@ -1,20 +1,20 @@
+import React from "react";
+
 import { BiError } from "react-icons/bi";
+
 export default function ErrorPage() {
   return (
     <>
       <div
         style={{
+          fontSize: "30px",
           display: "flex",
-          justifyContent: "center",
           alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <h1
-          style={{ fontSize: "100px", display: "flex", alignItems: "center" }}
-        >
-          <BiError />
-          Page Not Found( Error)
-        </h1>
+        <BiError />
+        Error (Page Not Found)
       </div>
     </>
   );

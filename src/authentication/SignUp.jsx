@@ -4,7 +4,6 @@ import FormInput from "./formInput/FormInput";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebase/Firebase";
 import { updateProfile, createUserWithEmailAndPassword } from "firebase/auth";
-
 const SignUp = () => {
   const [inputValues, setInputValues] = useState({
     email: "",
@@ -12,7 +11,7 @@ const SignUp = () => {
     confirmPassword: "",
   });
   const navigate = useNavigate();
-
+  const [errorMessage, setErrorMessage] = useState("");
   const inputs = [
     {
       id: 1,
@@ -42,32 +41,38 @@ const SignUp = () => {
       pattern: inputValues.password,
     },
   ];
-
   ///////////////handlechange Function  ////////////////
   const handleChange = (e) => {
     setInputValues({ ...inputValues, [e.target.name]: e.target.value });
   };
   // console.log(inputValues);
-
   //////////////Firebase Workk
   const handleRegister = async (e) => {
+    setErrorMessage("");
     e.preventDefault();
-
     try {
       await createUserWithEmailAndPassword(
         auth,
         inputValues.email,
         inputValues.password
-      ).then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        updateProfile(user.currentUser, {
-          displayName: inputValues.email,
+      )
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          updateProfile(user.currentUser, {
+            displayName: inputValues.email,
+          });
+          navigate("/signIn");
+          // ...
+        })
+        .catch((error) => {
+          if (error.message == "Firebase: Error (auth/email-already-in-use).") {
+            setErrorMessage("Email already exists");
+          }
         });
-        navigate("/signIn");
-        // ...
-      });
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <div
@@ -93,7 +98,9 @@ const SignUp = () => {
                 />
               </div>
             ))}
-
+            {errorMessage && (
+              <span style={{ color: "red" }}>{errorMessage}</span>
+            )}
             {/* <input type="text" class="input" placeholder="Full Name" />
             <input type="email" class="input" placeholder="Email" />
             <input type="password" class="input" placeholder="Password" /> */}
@@ -112,5 +119,4 @@ const SignUp = () => {
     </div>
   );
 };
-
 export default SignUp;

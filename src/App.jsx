@@ -1,26 +1,23 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
-import HeaderNavbar from "./components/HeaderNavbar";
 import { Outlet } from "react-router-dom";
-import ProductCard from "./products/ProductCard";
+import "./App.css";
 import CartCard from "./cart/CartCard";
-import Loader from "./components/Loader";
-import ErrorPage from "./components/ErrorPage";
-import SignUp from "./authentication/SignUp";
-import Products from "./products/Products";
+import HeaderNavbar from "./components/HeaderNavbar";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setCart } from "./cart/cartSlice";
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    const previousCart = localStorage.getItem("cart");
+    if (previousCart) {
+      dispatch(setCart(JSON.parse(previousCart)));
+    }
+  });
   return (
-    <div>
+    <>
       <HeaderNavbar />
       <Outlet />
-      {/* <Products />
-      <CartCard />
-      <Loader />
-      <ErrorPage />
-      <SignUp /> */}
-    </div>
+    </>
   );
 }
-
 export default App;

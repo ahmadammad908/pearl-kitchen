@@ -4,6 +4,7 @@ import { auth } from "./firebase/Firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 const SignIn = () => {
+  const [error, setError] = useState("");
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
@@ -17,6 +18,8 @@ const SignIn = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+    setError("Invalid Email and Password");
+    // setError("Invalid Password");
     try {
       signInWithEmailAndPassword(auth, inputs.email, inputs.password).then(
         (userCredential) => {
@@ -64,6 +67,7 @@ const SignIn = () => {
             <button type="button" onClick={handleLogin}>
               Login
             </button>
+            <h2>{error && <h2 style={{ color: "red" }}>{error}</h2>}</h2>
           </form>
           <div class="form-section">
             <p>

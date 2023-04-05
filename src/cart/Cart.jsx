@@ -2,11 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 import CartCard from "./CartCard";
 import { Link } from "react-router-dom";
-
 const Cart = () => {
   const { cart, state } = useSelector((state) => state.cart);
-
   let totalPrice = 0;
+
   cart.forEach((osairam) => {
     totalPrice += osairam.quantity * osairam.price;
   });
@@ -32,7 +31,6 @@ const Cart = () => {
           </h1>
         </div>
       )}
-
       {cart.map((osairam, i) => (
         <CartCard key={i} {...osairam} />
       ))}
@@ -58,7 +56,6 @@ const Cart = () => {
               Total Price
             </h2>
           </div>
-
           <div
             style={{
               display: "flex",
@@ -84,7 +81,6 @@ const Cart = () => {
               display: "flex",
               justifyContent: "center",
               paddingTop: "20px",
-              padding: "20px",
             }}
           >
             <Link
@@ -104,5 +100,4 @@ const Cart = () => {
     </div>
   );
 };
-
 export default Cart;

@@ -1,9 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addToCart, removeFromCart } from "../cart/cartSlice";
-
 import toast, { Toaster } from "react-hot-toast";
-
 const CartCard = (osairam) => {
   console.log("osariammm", osairam);
   const dispatch = useDispatch();
@@ -24,8 +22,8 @@ const CartCard = (osairam) => {
           margin: "20px",
           padding: "10px 20px",
           borderRadius: "50px",
-          background: "#e0e0e0",
-          boxShadow: "20px 20px 60px #bebebe, -20px -20px 60px #fffff",
+          background: "#E0E0E0",
+          boxShadow: "20px 20px 60px #BEBEBE, -20px -20px 60px #fffff",
         }}
       >
         <img
@@ -38,7 +36,6 @@ const CartCard = (osairam) => {
           {osairam.name}
         </h1>
         {/* <p style={{ marginTop: "-14px", marginLeft: "30px" }}>{osairam.price}</p> */}
-
         <div
           style={{
             display: "flex",
@@ -89,5 +86,4 @@ const CartCard = (osairam) => {
     </>
   );
 };
-
 export default CartCard;

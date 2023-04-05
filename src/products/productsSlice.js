@@ -2,12 +2,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../authentication/firebase/Firebase";
-
 const initialState = {
   products: [],
   state: "loading",
 };
-
 const productsSlice = createSlice({
   name: "products",
   initialState,
@@ -15,6 +13,5 @@ const productsSlice = createSlice({
     setProducts: (state, action) => action.payload,
   },
 });
-
 export default productsSlice.reducer;
 export const { setProducts } = productsSlice.actions;

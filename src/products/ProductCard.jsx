@@ -2,14 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../cart/cartSlice";
 import toast, { Toaster } from "react-hot-toast";
-// import "react-toastify/dist/ReactToastify.css";
-
 const ProductCard = (product) => {
   console.log("Products", product);
   const dispatch = useDispatch();
-
   const success = () => toast.success("Your Item added in your Bucket");
-
   return (
     <>
       <div className="notificationContainer">
@@ -44,5 +40,4 @@ const ProductCard = (product) => {
     </>
   );
 };
-
 export default ProductCard;

@@ -3,15 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../authentication/firebase/Firebase";
 const initialState = {
-  categories: [],
+  shopCategories: [],
   state: "loading",
 };
-const categoriesSlice = createSlice({
-  name: "categories",
+const shopCategoriesSlice = createSlice({
+  name: "shopCategories",
   initialState,
   reducers: {
-    setCategories: (state, action) => action.payload,
+    setShopCategories: (state, action) => action.payload,
   },
 });
-export default categoriesSlice.reducer;
-export const { setCategories } = categoriesSlice.actions;
+export default shopCategoriesSlice.reducer;
+export const { setShopCategories } = shopCategoriesSlice.actions;
